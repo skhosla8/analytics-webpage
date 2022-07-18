@@ -1,0 +1,28 @@
+.main {
+    display: grid;
+    grid-template-areas:
+        'card graph'
+        'card table';
+    grid-template-columns: 251px 1000px;
+    grid-template-rows: 350px auto;
+    grid-gap: 30px;
+    padding: 3rem 2rem;
+    background-color: #eff1f5;
+
+    @media (min-width: 1415px) {
+        grid-template-columns: 251px 1100px;
+    }
+
+    @media (max-width: 1414px) {
+        grid-template-columns: 251px 900px;
+    }
+
+    @media (max-width: 1240px) {
+        grid-template-columns: 251px 800px;
+    }
+
+    @media (max-width: 1140px) {
+        grid-template-columns: 251px 790px;
+        grid-gap: 20px;
+    }
+}

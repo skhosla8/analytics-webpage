@@ -1,0 +1,186 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #052849;
+  height: 65px;
+  color: #ffffff;
+  padding: 0 1rem;
+}
+.header__logo {
+  width: 45px;
+  height: 45px;
+}
+.header__user {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 1rem;
+  padding-left: 1.5rem;
+  border-left: solid 1px #1d3d5b;
+}
+.header__user img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.header__user span {
+  margin: 0 1rem;
+  font-size: 0.9rem;
+}
+.header__user button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.header__user button i {
+  color: lightgray;
+}
+
+.main {
+  display: grid;
+  grid-template-areas: "card graph" "card table";
+  grid-template-columns: 251px 1000px;
+  grid-template-rows: 350px auto;
+  grid-gap: 30px;
+  padding: 3rem 2rem;
+  background-color: #eff1f5;
+}
+@media (min-width: 1415px) {
+  .main {
+    grid-template-columns: 251px 1100px;
+  }
+}
+@media (max-width: 1414px) {
+  .main {
+    grid-template-columns: 251px 900px;
+  }
+}
+@media (max-width: 1240px) {
+  .main {
+    grid-template-columns: 251px 800px;
+  }
+}
+@media (max-width: 1140px) {
+  .main {
+    grid-template-columns: 251px 790px;
+    grid-gap: 20px;
+  }
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: card;
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 1.5rem 0;
+  box-shadow: 5px 5px 40px gray;
+}
+.product-card img {
+  width: 120px;
+  height: 120px;
+}
+.product-card__title {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+}
+.product-card p {
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 0.3rem 0 1rem;
+  text-align: center;
+  width: 170px;
+}
+.product-card__tags {
+  padding: 0 1rem 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+.product-card__tags div {
+  display: flex;
+  align-items: center;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  padding: 0.1rem 0.7rem;
+  margin: 0.5rem 0.5rem 0 0;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  color: gray;
+}
+
+.product-graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 40px gray;
+}
+.product-graph__title {
+  align-self: flex-start;
+  margin: 1rem 0 0 1.5rem;
+  color: #1d3d5b;
+  font-size: 0.9rem;
+}
+@media (min-width: 1200px) {
+  .product-graph svg {
+    width: 800px;
+  }
+}
+
+.x-axis path {
+  stroke: rgba(0, 0, 0, 0.1);
+}
+
+.product-table {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 40px gray;
+}
+.product-table table {
+  table-layout: fixed;
+  width: 100%;
+  max-width: 1300px;
+  padding: 1rem;
+  border-collapse: collapse;
+}
+.product-table table thead {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.7rem;
+}
+.product-table table thead tr th {
+  padding: 1rem;
+  cursor: pointer;
+}
+.product-table table thead tr th:nth-of-type(2) {
+  color: #46a8f6;
+}
+.product-table table thead tr th:nth-of-type(3) {
+  color: rgba(0, 0, 0, 0.3);
+}
+.product-table table thead tr th i {
+  margin-left: 0.2rem;
+  opacity: 0.6;
+}
+.product-table table tbody tr {
+  text-align: center;
+}
+.product-table table tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.product-table table tbody tr td {
+  padding: 0.5rem;
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.75rem;
+}
+
+.app {
+  width: 100vw;
+  height: auto;
+  font-family: "Arial";
+}

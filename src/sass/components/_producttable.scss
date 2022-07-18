@@ -1,0 +1,55 @@
+.product-table {
+    background-color: #ffffff;
+    box-shadow: 5px 5px 40px gray;
+
+    table {
+        table-layout: fixed;
+        width: 100%;
+        max-width: 1300px;
+        padding: 1rem;
+        border-collapse: collapse;
+
+        thead {
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 0.7rem;
+
+            tr {
+                th {
+                    padding: 1rem;
+                    cursor: pointer;
+
+                    &:nth-of-type(2) {
+                        color: #46a8f6;
+                    }
+
+                    &:nth-of-type(3) {
+                        color: rgba(0, 0, 0, 0.3);
+                    }
+
+                    i {
+                        margin-left: 0.2rem;
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                text-align: center;
+
+                &:nth-child(odd) {
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+
+                td {
+                    padding: 0.5rem;
+                    border-top: solid 1px rgba(0, 0, 0, 0.1);
+                    color: rgba(0, 0, 0, 0.5);
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+}

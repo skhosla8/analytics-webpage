@@ -1,0 +1,11 @@
+@use './components/header'; 
+@use './components/main';
+@use './components//productcard';
+@use './components//productgraph';
+@use './components/producttable';
+
+.app {
+    width: 100vw;
+    height: auto;
+    font-family: 'Arial';
+}
