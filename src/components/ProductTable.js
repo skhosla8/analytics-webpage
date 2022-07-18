@@ -22,10 +22,10 @@ function ProductTable() {
 
     if (col === 'weekEnding') {
       if (!order) {
-        sorted = [...data].sort((a, b) => new Date(a[col]) - new Date(b[col]));
+        sorted = [...data].sort((a, b) => new Date(b[col]) - new Date(a[col]));
         setOrder(true)
       } else {
-        sorted = [...data].sort((a, b) => new Date(b[col]) - new Date(a[col]));
+        sorted = [...data].sort((a, b) => new Date(a[col]) - new Date(b[col]));
         setOrder(false);
       }
     } else {
